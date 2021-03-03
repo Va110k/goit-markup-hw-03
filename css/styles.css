@@ -56,8 +56,8 @@ h2,
 h3,
 ul,
 p {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* logo */
@@ -70,11 +70,6 @@ p {
   line-height: 1.19;
 }
 
-/* .logo-text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-} */
-
 .logo .accent {
   color: var(--accent-color);
 }
@@ -82,28 +77,22 @@ p {
 /* hero */
 
 .hero {
+  text-align: center;
+
   background-color: var(--header-footer-background-color);
 }
 
 .hero-title {
-  /* margin-top: 0px;
-  margin-bottom: 0px; */
+  margin-bottom: 30px;
 
   color: var(--primary-background-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
-/* nav */
-/* .site-nav {
-  margin-top: 0px;
-  margin-bottom: 0px;
-} */
 
 .site-nav .link {
   color: var(--primary-text-color);
@@ -112,11 +101,6 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
-/* .contacts {
-  margin-top: 0px;
-  margin-bottom: 0px;
-} */
 
 .contacts .link {
   color: var(--secondary-text-color);
@@ -127,8 +111,22 @@ p {
 }
 
 /* features */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -136,6 +134,8 @@ p {
 }
 
 .features .title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -147,6 +147,11 @@ p {
 
 .section .desc {
   color: var(--secondary-text-color);
+}
+
+/* specialization */
+.specialization {
+  padding-top: 0;
 }
 
 /* team */
