@@ -1,14 +1,3 @@
-/* общие стили */
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 /* основной цвет текста  #212121 */
 /* вторичный цвет текста #757575 */
 /* белый #FFFFFF */
@@ -47,6 +36,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   outline: 2px solid tomato;
 }
 
@@ -58,6 +49,56 @@ ul,
 p {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+/* nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .item {
+  background-color: tomato;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts {
+  display: flex;
+}
+
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts .link {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav {
+  display: flex;
 }
 
 /* logo */
@@ -92,22 +133,6 @@ p {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.site-nav .link {
-  color: var(--primary-text-color);
-
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.contacts .link {
-  color: var(--secondary-text-color);
-
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 /* features */
@@ -160,18 +185,25 @@ p {
   background-color: var(--secondary-background-color);
 }
 
+.team .photo {
+  margin-bottom: 30px;
+}
+
 .team .name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.section .position {
+.team .position {
   color: var(--secondary-text-color);
 
   font-size: 16px;
   line-height: 1.19;
 }
+
 /* акцент */
 
 .link:hover,
@@ -182,6 +214,7 @@ p {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
 /* footer */
 
 .footer {
