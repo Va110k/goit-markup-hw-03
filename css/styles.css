@@ -38,10 +38,10 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
 }
 
 /* сброс стилей */
+
 h1,
 h2,
 h3,
@@ -56,13 +56,15 @@ img {
 }
 
 /* nav */
+
 .main-nav {
   display: flex;
   align-items: center;
 }
 
-.site-nav .item {
-  background-color: tomato;
+.site-nav {
+  display: flex;
+  padding-left: 0px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -83,6 +85,7 @@ img {
 
 .contacts {
   display: flex;
+  margin-left: auto;
 }
 
 .contacts .item:not(:last-child) {
@@ -90,6 +93,10 @@ img {
 }
 
 .contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondary-text-color);
 
   font-weight: 500;
@@ -97,13 +104,11 @@ img {
   letter-spacing: 0.02em;
 }
 
-.site-nav {
-  display: flex;
-}
-
 /* logo */
 
 .logo {
+  margin-right: 93px;
+
   color: #000000;
 
   font-family: Raleway;
@@ -136,6 +141,20 @@ img {
 }
 
 /* features */
+
+.features-list {
+  display: flex;
+  padding-left: 0px;
+}
+
+.features-list .item {
+  width: 270px;
+}
+
+.features-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -175,14 +194,35 @@ img {
 }
 
 /* specialization */
+
 .specialization {
   padding-top: 0;
+}
+
+.specialization-list {
+  display: flex;
+  padding-left: 0px;
+}
+
+.specialization-list .item:not(:last-child) {
+  margin-right: 30px;
+  border: 2px solid tomato;
 }
 
 /* team */
 
 .team {
   background-color: var(--secondary-background-color);
+}
+
+.team-list {
+  display: flex;
+  padding-left: 0px;
+}
+
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+  border: 2px solid tomato;
 }
 
 .team .photo {
@@ -198,6 +238,8 @@ img {
 }
 
 .team .position {
+  margin-bottom: 30px;
+
   color: var(--secondary-text-color);
 
   font-size: 16px;
@@ -230,6 +272,10 @@ img {
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+
   color: var(--primary-background-color);
 
   font-family: Raleway;
@@ -240,6 +286,14 @@ img {
 
 .footer-logo .accent {
   color: var(--accent-color);
+}
+
+.adress-list {
+  padding-left: 0px;
+}
+
+.adress-list .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* button */
