@@ -263,6 +263,11 @@ img {
   background-color: var(--header-footer-background-color);
 }
 
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer .adress {
   color: var(--primary-background-color);
 }
@@ -273,7 +278,6 @@ img {
 
 .footer-logo {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
 
   color: var(--primary-background-color);
@@ -323,6 +327,7 @@ img {
 .filter-list {
   display: flex;
   padding-bottom: 50px;
+  justify-content: center;
 }
 
 .filter-list .item {
