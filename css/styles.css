@@ -5,6 +5,8 @@
 /* вторичный цвет фона #F5F4FA */
 /* фон футера #2F303A */
 
+/* outline: 2px solid tomato; */
+
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -53,6 +55,19 @@ p {
 
 img {
   display: block;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /* nav */
@@ -155,19 +170,6 @@ img {
   margin-right: 30px;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
 .section-title {
   margin-bottom: 50px;
 
@@ -206,7 +208,6 @@ img {
 
 .specialization-list .item:not(:last-child) {
   margin-right: 30px;
-  border: 2px solid tomato;
 }
 
 /* team */
@@ -222,7 +223,6 @@ img {
 
 .team-list .item:not(:last-child) {
   margin-right: 30px;
-  border: 2px solid tomato;
 }
 
 .team .photo {
@@ -320,6 +320,15 @@ img {
 
 /* Портфолио */
 
+.filter-list {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.filter-list .item {
+  margin-right: 8px;
+}
+
 .button-secondary {
   display: inline-block;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -344,14 +353,33 @@ img {
   background-color: var(--accent-color);
 }
 
-.projects .nav {
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+}
+
+.projects-list .item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-list .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.projects-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.projects-list .nav {
   color: var(--secondary-text-color);
 
   font-size: 16px;
   line-height: 1.87;
 }
 
-.projects .title {
+.projects-list .title {
   color: var(--primary-text-color);
 
   font-weight: bold;
